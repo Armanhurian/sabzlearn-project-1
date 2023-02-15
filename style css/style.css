@@ -1,0 +1,424 @@
+@import './variable.css';
+@import './fonts.css';
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all 400ms ease;
+}
+i{
+    user-select: none;
+}
+
+.top-bar__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    background-color: #e4e4f2;
+}
+.top-bar__right{
+    display: flex;
+    align-items: center;
+
+}
+.top-bar__manu{
+    display: flex;
+    gap: 1rem;
+}
+
+.top-bar__left{
+    display: flex;
+    gap: 1rem;
+}
+.top-bar__left-emailtext,
+.top-bar__left-phonetext{
+    margin-left: 0.5rem;
+}
+.top-bar__left-emailIcon,
+.top-bar__left-phoneIcon{
+    color: var(--theme-color);
+}
+.nav-bar__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 0.8rem;
+}
+.nav-bar__right{
+    display: flex;
+    gap: 1rem;
+}
+.nave-bar__manu{
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+}
+.nave-bar__link{
+    position: relative;
+}
+.nave-bar__list{
+    position: relative;
+}
+
+.nav-bar__dropdown-manu{
+    padding: 1rem 1rem;
+    position: absolute;
+    transition: all 300ms ease;
+    top: 2rem;
+    width: 10rem;
+    background-color: white;
+    box-shadow: 0 0 10px #00000057;
+    border-radius: 5px;
+    border-bottom: 3px solid var(--theme-color);
+    opacity: 0;
+    visibility: hidden;
+}
+.nave-bar__list:hover .nav-bar__dropdown-manu{
+    opacity: 1;
+    visibility: visible;
+}
+.nav-bar__dropdown-list{
+    margin-bottom: 7px;
+}
+.nav-bar__left{
+    display: flex;
+    gap: 1rem;
+}
+.nav-bar__search-icon a{
+    height: 2.7rem;
+    width: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-color);
+    /* color: white; */
+    border-radius: 5px;
+}
+.nav-bar__search-icon-text{
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+.nav-bar__cart-shopping-icon a{
+    height: 2.7rem;
+    width: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c1c8e7;
+    /* color: white; */
+    border-radius: 5px;
+}
+.nav-bar__cart-shopping-icon-text{
+    font-size: 1.2rem;
+}
+.nav-bar__cart-shopping-icon:hover a{
+    color: var(--dark-color);
+}
+.nav-bar__profile-text{
+    width: 10rem;
+    height: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--theme-color);
+    border-radius: 5px;
+    
+    color: var(--theme-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.nav-bar__profile-text:hover{
+    background-color: var(--theme-color);
+    color: var(--white-color);
+}
+
+/* start landing style  */
+
+.landing__container{
+    background: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.646)), url(../images/background_landing.jfif)
+    ;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 4.2rem 0;
+    text-align: center;
+}
+.landing__container-title{
+    font-size: 2.4rem;
+    color: var(--white-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: var(--primary-font);
+}
+.landing__container-subtitle{
+    
+    font-size: 1.2rem;
+    color: var(--white-color);
+    font-weight: bold;
+    font-family: var(--primary-font);
+}
+.landing__searchbar{
+    width: 100%;
+}
+.landing__searchbar{
+    width: 700px;
+    position: relative;
+    margin: 3.4rem auto;
+}
+.landing__searchbar-input{
+   
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 10px;  
+    outline: none;
+}
+.landing__searchbar-link{
+    position: absolute;
+    left: 0.3rem;
+    top: 0.3rem;
+    background-color: var(--theme-color);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.landing__searchbar-icon{
+    color: var(--white-color);
+    font-size: 1.5rem;
+
+}
+.landing__container-story{
+    display: flex;
+    justify-content: space-evenly;
+}
+.landing__container-story-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+}
+.landing__container-story-item  svg{
+    fill: var(--white-color);
+}
+.landing__container-story-count{
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.landing__container-story-text{
+
+    font-weight: bold;
+}
+/* finish landing style  */
+
+/* start courses style */
+.courses{
+    padding: 5rem;
+}
+.courses__container-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.courses__container-title-right{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.courses__container-subject{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.courses__container-text{
+    color: #99a0a7;
+}
+.courses__container-title-left{
+    height: 2.1rem;
+}
+.courses__link{
+    background-color: var(--theme-color);
+    padding: 0.5rem 1rem;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    gap: 0.4rem;
+    font-size: 1.1rem;
+}
+.courses__link:hover{
+    color: var(--white-color);
+}
+
+.courses__box{
+  background-color: var(--white-color);
+  border-radius: 1rem;
+  box-shadow: 0 0 19px rgb(168 172 185 / 30%);
+  margin: 2rem 0;
+  transition: all 400ms ease;
+}
+.courses__box:hover{
+    transform: translateY(-0.4rem);
+}
+
+.courses__box-image-link{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.courses__text-container{
+    padding: 1rem 0.5rem;
+}
+.courses__box-title{
+    font-size: 1.1rem;
+    color: var(--dark-color);
+}
+.courses__box-stars-teacher{
+     margin: 1rem 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.courses__box-teacher{
+    display: flex;
+    align-items: center;
+}
+.courses__box-teacher-icon{
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+.courses__box-teacher-name{
+    color: #6c757d;
+    font-size: 0.8rem;
+    margin: 0 0.4rem;
+}
+.courses__box-title-stars{
+    display: flex;
+    align-items: center;
+}
+.courses__box-count-price{
+    margin: 1rem 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.courses__box-count-icon{
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+.courses__box-count-number{
+    color: #6c757d;
+    font-size: 1rem;
+    margin: 0 0.4rem;
+}
+.courses__box-price{
+    color: #9c9c9c;
+    font-size: 1.3rem;
+
+}
+.courses-other-text-link{
+    display: flex;
+    justify-content: center;
+    /* padding: 0.8rem; */
+    border-top: 1px solid rgb(205, 200, 200);
+    padding: 0.6rem;
+    /* align-items: center; */
+    /* height: 100%; */
+    margin-top: 25px;
+    color: var(--theme-color);
+}
+.courses-other-text-link-icon{
+    margin-right: 0.2rem;
+}
+/* finish courses style */
+
+/* start about-us style */
+.about-us{
+    padding: 5rem;
+}
+.about-us__header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.about-us__header-text{
+    font-size: 1.1rem;
+    color: #9c9c9c;
+}
+.about-us__content-box{
+    background-color: var(--white-color);
+    margin: 2rem 0;
+    box-shadow: 0 0 19px rgb(168 172 185 / 30%);
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 0.5rem;
+}
+.about-us__content-box-icon{
+    font-size: 4.1rem;
+    color: #666;
+}
+.about-us__content-container-box-title{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.about-us__content-box-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem ;
+}
+/* finish about-us style */
+
+/* start favorite-courses style */
+.favorite-courses{
+    padding: 5rem;
+}
+/* finish favorite-courses style */
+
+/* start pre-sell-courses style */
+.pre-sell-courses{
+    padding: 5rem;
+}
+/* finish pre-sell-courses style */
+
+/* start Helper Classes  */
+.subject{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.subject::before{
+    content: "";
+    position: absolute;
+    right: -1rem;
+    height: 2.8rem;
+    width: 0.3rem;
+    background-color: var(--theme-color);
+    transform: rotate(8deg);
+    border-radius: 10px;
+}
+.subject::after{
+    content: "";
+    position: absolute;
+    bottom: -0.1rem;
+    right: 0;
+    width: 100%;
+    max-width: 250px;
+    height: 65%;
+    background-color: rgba(43, 206, 86, 0.2);
+}
+/* finish Helper Classes  */
+
