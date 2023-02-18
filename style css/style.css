@@ -1,145 +1,13 @@
 @import './variable.css';
 @import './fonts.css';
+@import './top-bar.css';
+@import './navbar.css';
+@import './footer.css';
+@import './course-box.css';
+@import './default.css';
 
 
 
-body {
-    width: 100%;
-    height: 100%;
-    direction: rtl;
-    box-sizing: border-box;
-    
-}
-
-a{
-    text-decoration: none;
-    color: var(--dark-color);
-    transition: all 400ms ease;
-}
-i{
-    user-select: none;
-}
-
-.top-bar__container{
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 1rem;
-    background-color: #e4e4f2;
-}
-.top-bar__right{
-    display: flex;
-    align-items: center;
-
-}
-.top-bar__manu{
-    display: flex;
-    gap: 1rem;
-}
-
-.top-bar__left{
-    display: flex;
-    gap: 1rem;
-}
-.top-bar__left-emailtext,
-.top-bar__left-phonetext{
-    margin-left: 0.5rem;
-}
-.top-bar__left-emailIcon,
-.top-bar__left-phoneIcon{
-    color: var(--theme-color);
-}
-.nav-bar__container{
-    display: flex;
-    justify-content: space-between;
-    padding: 1.2rem 0.8rem;
-}
-.nav-bar__right{
-    display: flex;
-    gap: 1rem;
-}
-.nave-bar__manu{
-    display: flex;
-    gap: 1rem;
-    align-self: center;
-}
-.nave-bar__link{
-    position: relative;
-}
-.nave-bar__list{
-    position: relative;
-}
-
-.nav-bar__dropdown-manu{
-    padding: 1rem 1rem;
-    position: absolute;
-    transition: all 300ms ease;
-    top: 2rem;
-    width: 10rem;
-    background-color: white;
-    box-shadow: 0 0 10px #00000057;
-    border-radius: 5px;
-    border-bottom: 3px solid var(--theme-color);
-    opacity: 0;
-    visibility: hidden;
-}
-.nave-bar__list:hover .nav-bar__dropdown-manu{
-    opacity: 1;
-    visibility: visible;
-}
-.nav-bar__dropdown-list{
-    margin-bottom: 7px;
-}
-.nav-bar__left{
-    display: flex;
-    gap: 1rem;
-}
-.nav-bar__search-icon a{
-    height: 2.7rem;
-    width: 2.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--theme-color);
-    /* color: white; */
-    border-radius: 5px;
-}
-.nav-bar__search-icon-text{
-    font-size: 1.2rem;
-    color: var(--white-color);
-}
-.nav-bar__cart-shopping-icon a{
-    height: 2.7rem;
-    width: 2.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #c1c8e7;
-    /* color: white; */
-    border-radius: 5px;
-}
-.nav-bar__cart-shopping-icon-text{
-    font-size: 1.2rem;
-}
-.nav-bar__cart-shopping-icon:hover a{
-    color: var(--dark-color);
-}
-.nav-bar__profile-text{
-    width: 10rem;
-    height: 2.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--theme-color);
-    border-radius: 5px;
-    
-    color: var(--theme-color);
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-.nav-bar__profile-text:hover{
-    background-color: var(--theme-color);
-    color: var(--white-color);
-}
 
 /* start landing style  */
 
@@ -262,85 +130,7 @@ i{
     color: var(--white-color);
 }
 
-.courses__box{
-  background-color: var(--white-color);
-  border-radius: 1rem;
-  box-shadow: 0 0 19px rgb(168 172 185 / 30%);
-  margin: 2rem 0;
-  transition: all 400ms ease;
-}
-.courses__box:hover{
-    transform: translateY(-0.4rem);
-}
 
-.courses__box-image-link{
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
-}
-.courses__text-container{
-    padding: 1rem 0.5rem;
-}
-.courses__box-title{
-    font-size: 1.1rem;
-    color: var(--dark-color);
-}
-.courses__box-stars-teacher{
-     margin: 1rem 0;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-}
-.courses__box-teacher{
-    display: flex;
-    align-items: center;
-}
-.courses__box-teacher-icon{
-    color: #6c757d;
-    font-size: 1.1rem;
-}
-.courses__box-teacher-name{
-    color: #6c757d;
-    font-size: 0.8rem;
-    margin: 0 0.4rem;
-}
-.courses__box-title-stars{
-    display: flex;
-    align-items: center;
-}
-.courses__box-count-price{
-    margin: 1rem 0;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-}
-.courses__box-count-icon{
-    color: #6c757d;
-    font-size: 1.1rem;
-}
-.courses__box-count-number{
-    color: #6c757d;
-    font-size: 1rem;
-    margin: 0 0.4rem;
-}
-.courses__box-price{
-    color: #9c9c9c;
-    font-size: 1.3rem;
-
-}
-.courses-other-text-link{
-    display: flex;
-    justify-content: center;
-    /* padding: 0.8rem; */
-    border-top: 1px solid rgb(205, 200, 200);
-    padding: 0.6rem;
-    /* align-items: center; */
-    /* height: 100%; */
-    margin-top: 25px;
-    color: var(--theme-color);
-}
-.courses-other-text-link-icon{
-    margin-right: 0.2rem;
-}
 /* finish courses style */
 
 /* start about-us style */
@@ -384,7 +174,14 @@ i{
 
 /* start favorite-courses style */
 .favorite-courses{
-    padding: 5rem;
+    padding: 2rem 5rem;
+}
+.favorite-courses__slider{
+    margin: 1.5rem 0;
+}
+
+.favorite-courses__slider .courses__box:hover{
+    transform: none;
 }
 /* finish favorite-courses style */
 
@@ -392,7 +189,65 @@ i{
 .pre-sell-courses{
     padding: 5rem;
 }
+.pre-sell-courses__slider{
+    margin: 1.5rem 0;
+}
+.pre-sell-courses__slider .courses__box:hover{
+    transform: none;
+}
 /* finish pre-sell-courses style */
+
+/* start blog style */
+.blog{
+    padding:0 5rem ;
+}
+.blog__container-content{
+    margin: 2rem 0;
+}
+.blog__container-content-box{
+    box-shadow: 0 0 10px #0000001a;
+    transition: all 400ms ease;
+}
+.blog__container-content-box:hover{
+    transform: translateY(-0.4rem);   
+}
+.blog__container-content-image{
+    width: 100%;
+}
+.blog__container-content-titleBox{
+    padding: 1.4rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.blog__container-content-link{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.blog__container-content-text{
+    font-size: 0.9rem;
+    /* margin-top: 1rem; */
+    color: #898989;
+}
+.blog__container-content-btn{
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--theme-color);
+    padding-bottom: 0.2rem ;
+    border: 2px solid var(--theme-color);
+    border-radius: 7px;
+    transition: all 400ms ease;
+}
+.blog__container-content-btn:hover{
+    background-color: var(--theme-color);
+    color: var(--white-color);
+}
+/* finish blog style */
+
+
 
 /* start Helper Classes  */
 .subject{

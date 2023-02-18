@@ -1,0 +1,28 @@
+.top-bar__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    background-color: #e4e4f2;
+}
+.top-bar__right{
+    display: flex;
+    align-items: center;
+
+}
+.top-bar__manu{
+    display: flex;
+    gap: 1rem;
+}
+
+.top-bar__left{
+    display: flex;
+    gap: 1rem;
+}
+.top-bar__left-emailtext,
+.top-bar__left-phonetext{
+    margin-left: 0.5rem;
+}
+.top-bar__left-emailIcon,
+.top-bar__left-phoneIcon{
+    color: var(--theme-color);
+}
