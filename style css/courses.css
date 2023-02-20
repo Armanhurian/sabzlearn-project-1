@@ -5,6 +5,7 @@
 @import './footer.css';
 @import './course-box.css';
 @import './default.css';
+@import './helper.css';
 
 /* start road-to-page style */
 
@@ -90,3 +91,102 @@
     border-radius: 1rem;
 }
 /* finish course-info style */
+
+
+/* start main-courses style */
+
+.main-courses{
+    padding: 5rem;
+}
+
+.main-courses__cotainer-right-box{
+    background-color: var(--white-color);
+    padding: 1.2rem 1.3rem;
+    box-shadow:  0 0 10px rgba(184, 180, 180, 0.29);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-courses__cotainer-right-box-icon{
+    font-size: 2rem;
+    color: var(--theme-color);
+}
+.main-courses__cotainer-right-box-text{
+    margin-right: 1.2rem;
+}
+
+.main-courses__cotainer-right-box-paragraph{
+    color: #7d7e7f;
+    font-size: 1.1rem;
+    margin: 0.3rem;
+}
+/* finish main-courses style */
+
+
+/* start progress-box style */
+
+.progress-box-container{
+    background-color: #f0f2f7;
+    padding: 1.3rem 2rem;
+    border-radius: 1rem;
+}
+.progress-box-container-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.progress-box-container-header-icon{
+    color: #7b868a;
+    font-size: 1.6rem;
+}
+.progress-box-container-header-text{
+    color: #7b868a;
+    font-size: 1.1rem;
+}
+.progress-bar{
+    border-radius: 0.6rem;
+    height: 0.7rem;
+    background-color: var(--theme-color);
+}
+
+/* finish progress-box style */
+
+
+/* start description style */
+
+.description{
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: var(--white-color);
+    box-shadow:  0 0 10px rgba(184, 180, 180, 0.29);
+    border-radius: 1rem;
+}
+
+.courses-description__image{
+    margin-top: 3rem;
+    border-radius: 1rem;
+}
+.courses-description__text{
+    margin: 1.5rem 0;
+    line-height: 1.4rem;
+    color: #7a7a7a;
+}
+.courses-description-btns{
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 2rem;
+}
+.courses-description-btn-item{
+    color: var(--theme-color);
+    border: 2px solid var(--theme-color);
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.4rem;
+    transition: all 400ms ease;
+}
+.courses-description-btn-item:hover{
+    color: var(--white-color);
+    background-color: var(--theme-color);
+}
+/* finish description style */
