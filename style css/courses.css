@@ -190,3 +190,116 @@
     background-color: var(--theme-color);
 }
 /* finish description style */
+
+/* start course-introduction style */
+
+.course-introduction{
+    margin-top: 2rem;
+}
+.course-introduction__item{
+    margin: 1.2rem 0;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #f7f9fa;
+}
+.accordion-button::after{
+    position: absolute;
+    left: 1rem;
+}
+.accordion-body{
+    display: flex;
+    background-color: #f7f9fa;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordion-body-time{
+    font-size: 1.1rem;
+    color: #7a7a7a;
+}
+.accordion-body-left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.accordion-body-left-count{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bfbfbf;
+    border-radius: 50%;
+}
+
+.accordion-body-icon{
+    color: #939aa3;
+    font-size: 1.2rem;
+}
+.accordion-body-left-link{
+    color: #161616;
+}
+/* finish course-introduction style */
+
+
+/* start courses-teacher style */
+.courses-teacher__container{
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgb(184 180 180 / 29%);
+}
+
+.courses-teacher__container-header{
+
+display: flex;
+align-items: start;
+justify-content: space-between;
+}
+.courses-teacher__container-right{
+ display: flex;
+ gap: 1rem;
+ align-items: center;
+}
+.courses-teacher__container-right-img{
+  width: 65px;
+  border-radius: 50%;
+  box-shadow: 0 0  13px rgba(116, 113, 113, 0.114);
+}
+.courses-teacher__container-right-title{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.courses-teacher__container-title{
+    color: #7b868a;
+    font-size: 1.1rem;
+}
+.courses-teacher__container-subtitle{
+    color: #7b868a;
+    font-size: 0.9rem;
+}
+.courses-teacher__container-left{
+    background-color: var(--theme-color);
+    padding: 0.7rem 0.7rem;
+    border-radius: 0.5rem;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+}
+.courses-teacher__container-left-icon{
+    font-size: 1.1rem;
+}
+.courses-teacher__container-left-text{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 0.3rem;
+
+}
+.courses-teacher__container-text{
+    line-height: 1.5rem;
+    color: #7b868a;
+    margin-top: 0.6rem;
+    font-size: 15px;
+}
+/* finish courses-teacher style */
