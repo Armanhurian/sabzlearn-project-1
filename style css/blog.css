@@ -1,0 +1,204 @@
+@import './variable.css';
+@import './fonts.css';
+@import './top-bar.css';
+@import './navbar.css';
+@import './footer.css';
+@import './course-box.css';
+@import './default.css';
+@import './helper.css';
+@import './road-to-page.css';
+@import './course-of-connecting.css';
+
+.main-courses{
+    padding: 5rem;
+    
+}
+.courses-condition{
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.courses-of-connect-title{
+    position: relative;
+}
+.courses-of-connect-title::before{
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 32px;
+    background-color: var(--theme-color);
+    right: 1.1rem;
+    top: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.7rem;
+    transform: skewX(-10deg);
+}
+.courses-condition__list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    
+}
+.courses-condition___item-fast{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 0.4rem;
+    transition: all 400ms ease;
+}
+.courses-condition__item-link-fast{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 400ms ease;
+    font-size: 0.9rem;
+    padding-bottom: 0.4rem;
+    color: #464749;
+}
+.courses-condition__item-fast-icon{
+    color: #909aa7;
+}
+
+.courses-condition___item-fast:hover{
+    padding-right: 0.4rem;
+}
+
+.last__blog-list{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+.last__blog-item{
+    padding: 1rem ;
+    border-bottom: 1px solid #eeeeee;
+
+}
+.last__blog-link{
+    color: #464749;
+}
+.main-courses__cotainer-right{
+    box-shadow: 0 0 13px 1px rgb(70 72 77 / 8%);
+    padding: 1.5rem;
+    
+}
+
+.main-courses__cotainer-right-title{
+    font-size: 1.8rem;
+    border-bottom: 2px solid #f3f3f3;
+    padding-bottom: 1.7rem;
+}
+.main-courses__cotainer-right-list{
+    margin: 2rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+}
+.main-courses__cotainer-right-item{
+    margin-left: 1rem;
+}
+.main-courses__cotainer-right-icon{
+    color: #c7c7c7;
+    font-size: 1rem;
+}
+.main-courses__cotainer-right-link, .main-courses__cotainer-right-text{
+    font-size: 0.9rem;
+    color: #8f8f8f;
+    margin-right: 0.3rem;
+}
+.main-courses__cotainer-right-image-cover{
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+}
+.main-courses__cotainer-right-rate{
+    display: flex;
+    align-items: center;
+
+}
+.main-courses-star-icon-image{
+    margin-right: -0.2rem;
+}
+.main-courses__cotainer-right-rate-text{
+    font-size: 1.2rem;
+    color: #7d7d7f;
+    margin-right: 1.3rem;
+}
+
+.main-courses__cotainer-right-paragraph{
+    margin-top: 2rem;
+}
+.section-blog-read__container{
+    padding: 1.5rem ;
+    background-color: #f2f2f2;
+    border-radius: 1.2rem;
+    margin-top: 1.8rem;
+}
+
+.section-blog-read__container-text{
+    font-weight: bold;
+    /*  */
+}
+.section-blog-read__container-list{
+    margin-top: 1.2rem;
+}
+.section-blog-read__container-item{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.section-blog-read__container-link{
+    
+    color: #1e83f0;
+}
+.section-blog-read__container-item:hover{
+    text-decoration: underline;
+    color: #1e83f0;
+}
+.blog-image-js{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.suggestion-blog{
+    margin-top: 3rem;
+}
+.best-site-js-blog-title{
+    font-size: 1.5rem;
+    color: #008c25;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.best-site-js-blog-text{
+    margin-top: 1rem;
+}
+.best-site-js-blog-image{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.share-social-media{
+    display: flex;
+    align-self: center;
+}
+.share-social-media-text{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #7d7e7f;
+}
+.share-social-media-list{
+    display: flex;
+    align-items: center;
+}
+.share-social-media-link{
+    color: #7b868a;
+    margin-right: 0.7rem;
+}
+
+
+/* start helper style */
+.paragraph{
+    line-height: 2rem;
+    color: #7d7e7e;
+}
+/* finish helper style */
