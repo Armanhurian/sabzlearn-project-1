@@ -11,7 +11,7 @@
 
 .main-courses{
     padding: 5rem;
-    
+    position: relative;
 }
 .courses-condition{
     overflow: hidden;
@@ -76,6 +76,10 @@
 }
 .last__blog-link{
     color: #464749;
+}
+.main-courses__cotainer-left{
+    position: sticky;
+    top: 1rem;
 }
 .main-courses__cotainer-right{
     box-shadow: 0 0 13px 1px rgb(70 72 77 / 8%);
@@ -194,6 +198,94 @@
     color: #7b868a;
     margin-right: 0.7rem;
 }
+.next-last-blog__container{
+    margin-top: 3rem;
+    background-color: #f0f2f7;
+    padding: 3rem 1.4rem;
+    border-radius: 0.5rem;
+}
+
+.next-last-blog__container-right{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.next-last-blog__container-right-icon-link , .next-last-blog__container-left-icon-link{
+    color: #adb5db;
+}
+.next-last-blog__container-right-link {
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #464749;
+    line-height: 1.5rem;
+}
+.next-last-blog__container-left-link{
+    margin-left: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #464749;
+    line-height: 1.5rem;
+}
+.next-last-blog__container-left{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    position: relative;
+   
+}
+.next-last-blog__container-left::before{
+    content: 'جدیدتر';
+    position: absolute;
+    right: 0;
+    top: -1.1rem;
+    color:#adb5db ;
+}
+.next-last-blog__container-right::before{
+    content: 'قدیمی تر';
+    position: absolute;
+    left: 0;
+    top: -1rem;
+    color:#adb5db ;
+    transform: rotate(180deg);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.2rem;
+}
+.comment-title{
+    font-size: 0.8rem;
+    color: #464749;
+}
+.comment-subtitle{
+    margin: 1.2rem 0;
+    color: #464749;
+}
+.comment-text{
+    color: #6c757d;
+}
+.comment-textarea{
+  height: 12rem;
+  margin-top: 0.5rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 5px rgba(169, 169, 169, 0.354);
+}
+.comment-btn{
+    max-width: 10rem;
+    margin-top: 1rem;
+    padding: 0.8rem 1.3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--theme-color);
+    font-size: 0.95rem;
+    color: var(--white-color);
+}
+
+
 
 
 /* start helper style */

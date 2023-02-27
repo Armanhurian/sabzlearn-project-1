@@ -1,0 +1,62 @@
+@import './variable.css';
+@import './fonts.css';
+@import './top-bar.css';
+@import './navbar.css';
+@import './footer.css';
+@import './course-box.css';
+@import './default.css';
+@import './helper.css';
+@import './road-to-page.css';
+@import './course-of-connecting.css';
+
+/* start login style */
+.login-register__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.login{
+    background-color: white;
+    box-shadow: 0 0 10px #ccc9c973;
+    padding: 1.8rem 1.3rem;
+    border-radius: 0.4rem;
+    width: 30rem;
+    border-bottom: 5px solid var(--theme-color);
+}
+.login__container{
+    display: flex;
+    flex-direction: column;
+}
+.login__container-title{
+    color: #7b868a;
+    margin:0 auto;
+    font-size: 1.5rem;
+}
+.login__container-subtitle{
+    color: #7b868a;
+    
+    margin:1rem auto;
+    font-size: 1rem;
+}
+.new-user-dont-login__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f2f7;
+    padding: 1.3rem 1.9rem;
+    border-radius: 0.4rem;
+}
+.new-user-dont-login__text{
+    font-size: 0.9rem;
+    color: #7b868a;
+}
+.new-user-dont-login__link{
+    background-color: #a8aaaf;
+    color: var(--white-color);
+    padding: 0.4rem 0.5rem;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+}
+/* finish login style */
